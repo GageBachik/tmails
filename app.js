@@ -36,6 +36,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/pubmed', function(req, res) {
+	console.log("route hit!");
 	console.log("req:", req)
 	var link = req.body.link;
 	getNames(link, res);
