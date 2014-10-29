@@ -1,0 +1,21 @@
+{
+  "name": "tmail",
+  "version": "0.0.1",
+  "description": "truthly scraper",
+  "main": "app.js",
+  "web": "node app.js",
+  "scripts": {
+    "test": "foreman start"
+  },
+  "repository": "",
+  "author": "Gage Bachik",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1",
+    "cheerio": "^0.17.0",
+    "cors": "^2.5.0",
+    "express": "^4",
+    "jade": "^1",
+    "request": "^2.47.0"
+  }
+}
