@@ -15,7 +15,6 @@ app.use(cors());
 var getNames = function(link, res){
 	request(link, function(error, response, html){
 		if(!error){
-			console.log("html:", html)
 			var $ = cheerio.load(html);
 			var email = '';
 			var author = $('.auths').find('a').first().text();
@@ -37,6 +36,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/pubmed', function(req, res) {
+	console.log("req:", req)
 	var link = req.body.link;
 	getNames(link, res);
 });
